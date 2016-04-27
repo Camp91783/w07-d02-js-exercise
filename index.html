@@ -2,29 +2,35 @@
 <html>
 <head>
   <title>Week 7, Day 2 Practice</title>
+  <script src= "./script.js"></script>
+  <link rel= "stylesheet" type= "test/css" href="./styles.css"
 </head>
 <body>
   
   <h1 class="header">Week 7, Day 2 Practice</h1>
   
   <ol>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onclick= "makePurple(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onclick= "makePurple(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onclick= "makePurple(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onclick= "makePurple(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onclick= "makePurple(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
   </ol>
   
-  <p> When you click <a href="#">This Link</a>, list items with a class of
-  "list-item" should turn orange. When you click <a href="#">this link</a>, they
-  should return to whatever color they would be otherwise (this might change if
+  <p1><p1 id= "myP"> When you click   	<a href="#" onClick= "makeOrange()" > Click here to change list items orange</a> This Link</a>, list items with a class of
+  "list-item" should turn orange. When you click   	<a href="#" onClick= "returnToBlack()"> Click me to make them Black again</a>, they should return to whatever color they would be otherwise (this might change if
   you click on those items). This should override whether they are purple or
-  not.</p>
+  not.</p1>
+
+  <p>
+  <p> 
   
-  <p>When you click<a href="#">This link</a>, the above paragraph should
-  disappear. When you click <a href="#">This link</a>, it should reappear.</p>
+  <p2><p2 id= "myP2"> When you click <a href="#" onClick= "makeHidden(myP);">This link</a>, the above paragraph should
+  disappear. When you click <a href="#" onClick= "makeVisible(myP)">This link</a>, it should reappear.</p2>
+
+
   
-  <p>When you click <a href="#">this link</a>, the above paragraph should gain a
+  <p>When you click <a href="#" onClick= "makeBackgroundBlue(myP2);" >this link</a>, the above paragraph should gain a
   blue blackground. When you click that link again, it should become orange.
   When you click it yet another time, it should go back to having a white
   background.</p>
